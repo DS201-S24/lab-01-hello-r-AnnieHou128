@@ -67,17 +67,24 @@ Now the correlation equals to -0.0630. Notice that the correlation increases a l
 
 ### Exercise 4
 
-Add code and narrative as needed.
-Note that two R chunks are given but they are not labeled.
-Use the convention from above to name them appropriately.
+First, plot the data in the dino dataset. Now, we plot `y` vs. `x` for the circle dataset. 
 
 ```{r}
+dino_data <- datasaurus_dozen %>%
+  filter(dataset == "circle")
 
+ggplot(data = dino_data, mapping = aes(x = x, y = y)) +
+  geom_point()
 ```
+
+And next calculate the correlation between `x` and `y` in this dataset:
 
 ```{r}
-
+dino_data %>%
+  summarize(r = cor(x, y))
 ```
+
+Now the correlation equals to -0.0683. Notice that the correlation decreased compared to that of both dino and star, which means a stronger negative linear correlation.
 
 ### Exercise 5
 
