@@ -16,7 +16,13 @@ library(datasauRus)
 
 ### Exercise 1
 
-Remove this text, and add your answer for Exercise 1 here.
+```
+datasaurus_dozen %>%
+  count(dataset) %>%
+  print()
+```
+
+Using the code above, we could find there are 13 rows and 2 columns. The variables are dataset, x, and y.
 
 ### Exercise 2
 
