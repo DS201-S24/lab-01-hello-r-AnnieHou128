@@ -26,8 +26,6 @@ Using the code above, we could find there are 13 rows and 2 columns. The variabl
 
 ### Exercise 2
 
-The answers for this Exercise are given for you below.
-But you should clean up some of the narrative so that it only includes what you want to turn in.
 
 First let's plot the data in the dino dataset:
 
